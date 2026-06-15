@@ -1,812 +1,1294 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Taping P&oacute;s-Parto | Conex&atilde;o Maternar</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wdth,wght@0,62.5,400;0,62.5,700;1,62.5,400;1,62.5,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:'DM Sans',sans-serif;color:#1a1a1a;line-height:1.6;overflow-x:hidden}
-img{max-width:100%;height:auto;display:block}
-a{text-decoration:none;color:inherit}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Masterclass Taping Pós-Parto | Da Teoria à Prática</title>
+  <meta name="description" content="Acesso à Masterclass Taping Pós-Parto | Da Teoria à Prática. Mais de 5 horas de conteúdo. Acesso imediato por 6 meses." />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
 
-:root{
---marrom:#4c2b1c;
---marrom-claro:#6b3a2a;
---rose:#c4a882;
---rose-hover:#b49972;
---bege:#faf6f1;
---bege-medio:#f0e6d8;
---branco:#ffffff;
---preto:#0a0a0a;
---verde-wpp:#25d366;
---verde-wpp-hover:#1da851;
---nude:#d4c4b0;
---champagne:#e8ddd0;
-}
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-.serif{font-family:'Noto Serif Display',serif;font-stretch:extra-condensed}
-.serif-italic{font-family:'Noto Serif Display',serif;font-stretch:extra-condensed;font-style:italic}
-.container{max-width:960px;margin:0 auto;padding:0 20px}
-.text-center{text-align:center}
-.section-dark{background:var(--marrom);color:var(--branco)}
-.section-light{background:var(--bege);color:var(--marrom)}
-.section-white{background:var(--branco);color:var(--marrom)}
-.section-cream{background:var(--bege-medio);color:var(--marrom)}
-.accent{color:var(--rose)}
-.marrom{color:var(--marrom)}
+    :root {
+      --off-white:    #FAF6F1;
+      --bege-claro:   #F2EAE0;
+      --bege-medio:   #E8D9C8;
+      --marrom-claro: #C9A882;
+      --marrom-medio: #9E7452;
+      --marrom-escuro:#6B4C30;
+      --marrom-deep:  #3D2410;
+      --texto-base:   #4A3728;
+      --texto-suave:  #7A6355;
+      --branco:       #FFFFFF;
+      --sombra:       rgba(61,36,16,0.10);
+      --sombra-forte: rgba(61,36,16,0.18);
+      --cta-color:    #1A6B3C;
+      --cta-hover:    #145730;
+    }
 
-.btn-comprar{
-display:inline-block;background:var(--marrom);color:var(--branco);
-font-family:'DM Sans',sans-serif;font-weight:700;font-size:1.1rem;
-padding:18px 48px;border-radius:50px;text-transform:uppercase;
-letter-spacing:1px;transition:all .3s ease;border:2px solid var(--marrom);
-cursor:pointer;text-align:center;
-}
-.btn-comprar:hover{
-background:var(--marrom-claro);border-color:var(--marrom-claro);
-transform:translateY(-2px);box-shadow:0 8px 25px rgba(76,43,28,.35);
-}
-.btn-whatsapp{
-display:inline-block;background:var(--verde-wpp);color:var(--branco);
-font-family:'DM Sans',sans-serif;font-weight:700;font-size:1rem;
-padding:14px 40px;border-radius:50px;letter-spacing:.5px;
-transition:all .3s ease;border:2px solid var(--verde-wpp);
-cursor:pointer;text-align:center;
-}
-.btn-whatsapp:hover{
-background:var(--verde-wpp-hover);border-color:var(--verde-wpp-hover);
-transform:translateY(-2px);box-shadow:0 8px 25px rgba(37,211,102,.3);
-}
+    html { scroll-behavior: smooth; }
 
-.top-bar{
-background:var(--marrom);color:var(--rose);text-align:center;
-padding:12px 20px;font-size:.85rem;font-weight:600;letter-spacing:1px;
-position:sticky;top:0;z-index:1000;
-}
-.top-bar span{font-family:'Noto Serif Display',serif;font-stretch:extra-condensed;font-size:1.1rem}
-.countdown{display:inline-flex;gap:6px;margin-left:8px}
-.countdown div{background:rgba(255,255,255,.1);padding:4px 8px;border-radius:4px;min-width:36px;text-align:center}
-.countdown div small{display:block;font-size:.6rem;color:var(--bege-medio);font-weight:400}
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--off-white);
+      color: var(--texto-base);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
 
-.vagas-alerta{
-background:var(--marrom-claro);color:var(--branco);text-align:center;
-padding:10px 20px;font-size:.85rem;font-weight:600;letter-spacing:.5px;
-}
-.vagas-alerta strong{color:var(--rose)}
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
 
-.hero{
-background:var(--marrom);color:var(--branco);padding:60px 20px 50px;
-text-align:center;position:relative;overflow:hidden;
-}
-.hero::before{
-content:'';position:absolute;top:0;left:0;right:0;bottom:0;
-background:radial-gradient(ellipse at center top,rgba(196,168,130,.08) 0%,transparent 70%);
-pointer-events:none;
-}
-.hero-logo{max-width:220px;margin:0 auto 30px}
-.hero-badge{
-display:inline-block;background:var(--rose);color:var(--marrom);
-font-size:.75rem;font-weight:700;padding:6px 20px;border-radius:50px;
-letter-spacing:2px;text-transform:uppercase;margin-bottom:24px;
-}
-.hero h1{
-font-family:'Noto Serif Display',serif;font-stretch:extra-condensed;
-font-size:2.4rem;line-height:1.15;margin-bottom:20px;font-weight:700;
-}
-.hero h1 em{font-style:italic;color:var(--rose)}
-.hero-sub{font-size:1.05rem;line-height:1.6;max-width:600px;margin:0 auto 12px;opacity:.9}
-.hero-money{
-font-family:'Noto Serif Display',serif;font-stretch:extra-condensed;
-font-size:1.5rem;color:var(--rose);margin:16px 0 8px;font-weight:700;
-}
-.hero-data{
-font-family:'Noto Serif Display',serif;font-stretch:extra-condensed;
-font-size:1.3rem;color:var(--nude);margin:20px 0 30px;font-weight:700;
-}
-.hero-data span{display:block;font-size:.9rem;font-weight:400;color:var(--bege-medio);font-family:'DM Sans',sans-serif}
-.hero-buttons{display:flex;flex-direction:column;gap:14px;align-items:center}
-.hero-img{max-width:320px;margin:40px auto 0;border-radius:16px;border:3px solid rgba(196,168,130,.3)}
+    .container {
+      width: 100%;
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
 
-.social-bar{
-background:var(--rose);color:var(--marrom);padding:20px 20px;
-text-align:center;font-weight:600;font-size:.95rem;letter-spacing:.5px;
-}
-.social-bar p{max-width:600px;margin:0 auto;line-height:1.5}
-.social-bar strong{font-family:'Noto Serif Display',serif;font-stretch:extra-condensed;font-size:1.2rem;display:block;margin-bottom:6px}
+    .section { padding: 96px 0; }
+    .section--alt { background-color: var(--bege-claro); }
 
-.dor{padding:60px 20px}
-.dor h2{font-family:'Noto Serif Display',serif;font-stretch:extra-condensed;font-size:1.8rem;line-height:1.2;margin-bottom:24px;text-align:center}
-.dor h2 em{font-style:italic;color:var(--rose)}
-.dor-lista{list-style:none;max-width:600px;margin:0 auto 30px}
-.dor-lista li{padding:12px 0;border-bottom:1px solid rgba(76,43,28,.1);font-size:1rem;padding-left:28px;position:relative}
-.dor-lista li::before{content:'\2716';position:absolute;left:0;color:var(--marrom-claro);font-size:.85rem;top:14px}
-.dor-destaque{background:var(--marrom);color:var(--branco);padding:24px;border-radius:12px;text-align:center;max-width:600px;margin:0 auto;font-size:1.05rem;line-height:1.5}
-.dor-destaque strong{color:var(--rose)}
+    .section__eyebrow {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.20em;
+      text-transform: uppercase;
+      color: var(--marrom-claro);
+      margin-bottom: 14px;
+      display: block;
+    }
 
-.video-section{padding:50px 20px;text-align:center}
-.video-section h2{font-family:'Noto Serif Display',serif;font-stretch:extra-condensed;font-size:1.6rem;margin-bottom:24px}
-.video-wrapper{max-width:340px;margin:0 auto;border-radius:16px;overflow:hidden;border:3px solid var(--rose);aspect-ratio:9/16;background:var(--preto)}
-.video-wrapper video{width:100%;height:100%;object-fit:cover}
+    .section__title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 700;
+      color: var(--marrom-escuro);
+      line-height: 1.25;
+      margin-bottom: 20px;
+    }
 
-.conteudo{padding:60px 20px}
-.conteudo h2{font-family:'Noto Serif Display',serif;font-stretch:extra-condensed;font-size:1.8rem;text-align:center;margin-bottom:10px}
-.conteudo h2 em{font-style:italic;color:var(--rose)}
-.conteudo-sub{text-align:center;margin-bottom:36px;font-size:.95rem;opacity:.8}
-.bloco{max-width:600px;margin:0 auto 30px}
-.bloco-titulo{font-family:'Noto Serif Display',serif;font-stretch:extra-condensed;font-size:1.2rem;font-weight:700;padding:14px 20px;border-radius:10px;margin-bottom:16px}
-.bloco-titulo-dark{background:var(--marrom);color:var(--rose)}
-.bloco-titulo-accent{background:var(--rose);color:var(--marrom)}
-.bloco-lista{list-style:none}
-.bloco-lista li{padding:10px 0 10px 24px;border-bottom:1px solid rgba(76,43,28,.08);position:relative;font-size:.95rem}
-.bloco-lista li::before{content:'\25C8';position:absolute;left:0;color:var(--rose);font-size:.75rem;top:12px}
+    /* ===================== BARRA FIXA ===================== */
+    #urgency-bar {
+      background: linear-gradient(90deg, var(--marrom-escuro) 0%, var(--marrom-medio) 100%);
+      color: var(--off-white);
+      text-align: center;
+      padding: 13px 24px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
 
-.stack-table{max-width:600px;margin:0 auto 36px;border-radius:12px;overflow:hidden;border:2px solid var(--rose)}
-.stack-row{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;font-size:.9rem;border-bottom:1px solid rgba(76,43,28,.08)}
-.stack-row:last-child{border-bottom:none}
-.stack-row span:first-child{flex:1;text-align:left;padding-right:12px}
-.stack-header{background:var(--marrom);color:var(--rose);font-weight:700;font-size:.8rem;letter-spacing:1px;text-transform:uppercase}
-.stack-price{font-weight:600;color:var(--marrom-claro);white-space:nowrap}
-.stack-total{background:var(--rose);color:var(--marrom);font-weight:700;font-size:1.1rem}
+    .bar-texto { opacity: 0.90; white-space: nowrap; }
 
-.preco-box{max-width:500px;margin:0 auto;padding:36px 24px;background:var(--branco);border-radius:16px;border:2px solid var(--rose);box-shadow:0 12px 40px rgba(76,43,28,.1)}
-.preco-de{font-size:1rem;text-decoration:line-through;opacity:.6;margin-bottom:4px}
-.preco-de2{font-size:1.1rem;text-decoration:line-through;opacity:.6;margin-bottom:16px}
-.preco-label{font-size:.9rem;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;color:var(--marrom-claro)}
-.preco-valor{font-family:'Noto Serif Display',serif;font-stretch:extra-condensed;font-size:3rem;font-weight:700;color:var(--marrom);line-height:1;margin-bottom:6px}
-.preco-valor span{font-size:1rem;font-family:'DM Sans',sans-serif;font-weight:400}
-.preco-parcela{font-size:1rem;color:var(--marrom-claro);margin-bottom:4px}
+    .bar-timer {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
 
-.conta-card{max-width:560px;margin:0 auto;background:rgba(255,255,255,.06);border:1px solid rgba(196,168,130,.3);border-radius:12px;padding:30px 24px}
-.conta-card p{font-size:1rem;line-height:1.6}
-.conta-destaque{background:var(--rose);color:var(--marrom);padding:20px;border-radius:10px;margin-top:16px}
+    .timer-bloco {
+      background: rgba(255,255,255,0.15);
+      border-radius: 5px;
+      padding: 3px 9px;
+      min-width: 44px;
+      text-align: center;
+    }
 
-.aovivo-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:600px;margin:0 auto}
-.aovivo-item{background:var(--branco);padding:24px 20px;border-radius:12px;border:1px solid rgba(76,43,28,.08);text-align:center}
-.aovivo-icon{font-size:1.6rem;color:var(--rose);margin-bottom:10px}
-.aovivo-item h3{font-family:'Noto Serif Display',serif;font-stretch:extra-condensed;font-size:1rem;margin-bottom:8px;color:var(--marrom)}
-.aovivo-item p{font-size:.85rem;opacity:.8}
+    .timer-num {
+      font-size: 1rem;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+      display: block;
+    }
 
-.paraquem-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:700px;margin:0 auto}
-.paraquem-box{padding:28px 24px;border-radius:12px}
-.paraquem-box h3{font-family:'Noto Serif Display',serif;font-stretch:extra-condensed;font-size:1rem;margin-bottom:16px;letter-spacing:1px}
-.paraquem-box ul{list-style:none}
-.paraquem-box ul li{padding:8px 0 8px 22px;position:relative;font-size:.9rem;border-bottom:1px solid rgba(0,0,0,.05)}
-.paraquem-sim{background:var(--bege);border:2px solid var(--rose)}
-.paraquem-sim h3{color:var(--marrom)}
-.paraquem-sim ul li::before{content:'\2714';position:absolute;left:0;color:var(--rose);font-size:.8rem;top:10px}
-.paraquem-nao{background:var(--branco);border:2px solid var(--marrom-claro)}
-.paraquem-nao h3{color:var(--marrom-claro)}
-.paraquem-nao ul li::before{content:'\2716';position:absolute;left:0;color:var(--marrom-claro);font-size:.8rem;top:10px}
+    .timer-leg {
+      font-size: 0.52rem;
+      font-weight: 600;
+      letter-spacing: 0.10em;
+      opacity: 0.72;
+      display: block;
+    }
 
-.carrossel-container{position:relative;max-width:800px;margin:0 auto;overflow:hidden}
-.carrossel-track{display:flex;gap:20px;transition:transform .4s ease;cursor:grab;-webkit-overflow-scrolling:touch;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-ms-overflow-style:none;padding:10px 0}
-.carrossel-track::-webkit-scrollbar{display:none}
-.depo-card{min-width:280px;max-width:300px;background:var(--branco);padding:28px 24px;border-radius:14px;border:1px solid rgba(76,43,28,.08);text-align:left;flex-shrink:0;scroll-snap-align:start;box-shadow:0 4px 16px rgba(76,43,28,.06)}
-.depo-stars{color:var(--rose);font-size:1.1rem;margin-bottom:12px;letter-spacing:2px}
-.depo-card p{font-size:.9rem;line-height:1.5;color:var(--marrom);margin-bottom:16px;font-style:italic}
-.depo-card strong{display:block;font-size:.9rem;color:var(--marrom)}
-.depo-card span{font-size:.8rem;color:var(--marrom-claro);opacity:.7}
-.carrossel-btn{position:absolute;top:50%;transform:translateY(-50%);background:var(--marrom);color:var(--rose);border:none;width:40px;height:40px;border-radius:50%;font-size:1.4rem;cursor:pointer;z-index:10;display:flex;align-items:center;justify-content:center;transition:all .3s ease}
-.carrossel-btn:hover{background:var(--rose);color:var(--marrom)}
-.carrossel-prev{left:4px}
-.carrossel-next{right:4px}
+    .timer-sep {
+      font-size: 1rem;
+      font-weight: 700;
+      opacity: 0.5;
+      align-self: center;
+      margin-bottom: 4px;
+    }
 
-.bio-wrapper{display:flex;gap:36px;align-items:center;max-width:700px;margin:0 auto}
-.bio-img-wrap{flex-shrink:0}
-.bio-img{width:220px;height:280px;object-fit:cover;border-radius:14px;border:3px solid var(--rose)}
-.bio-label{font-size:.75rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--rose);margin-bottom:6px}
-.bio-text p{font-size:.95rem;line-height:1.6;margin-bottom:10px;opacity:.9}
+    /* ===================== BOTÃO CTA ===================== */
+    .btn-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      background: linear-gradient(135deg, var(--cta-color) 0%, var(--cta-hover) 100%);
+      color: var(--branco) !important;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 18px 32px;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      box-shadow: 0 6px 24px rgba(26,107,60,0.35);
+      text-decoration: none;
+    }
 
-.faq{padding:60px 20px}
-.faq h2{font-family:'Noto Serif Display',serif;font-stretch:extra-condensed;font-size:1.8rem;text-align:center;margin-bottom:36px}
-.faq h2 em{font-style:italic;color:var(--rose)}
-.faq-item{max-width:600px;margin:0 auto 16px;border:1px solid rgba(76,43,28,.1);border-radius:10px;overflow:hidden}
-.faq-question{padding:18px 20px;font-weight:600;font-size:.95rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:background .3s}
-.faq-question:hover{background:rgba(196,168,130,.08)}
-.faq-question::after{content:'+';font-size:1.4rem;color:var(--rose);transition:transform .3s}
-.faq-item.active .faq-question::after{transform:rotate(45deg)}
-.faq-answer{max-height:0;overflow:hidden;transition:max-height .4s ease;padding:0 20px}
-.faq-item.active .faq-answer{max-height:300px;padding:0 20px 18px}
-.faq-answer p{font-size:.9rem;line-height:1.6;opacity:.85}
+    .btn-cta svg {
+      width: 18px;
+      height: 18px;
+      fill: none;
+      stroke: var(--branco);
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      flex-shrink: 0;
+    }
 
-.cta-final{padding:60px 20px;text-align:center}
-.cta-final h2{font-family:'Noto Serif Display',serif;font-stretch:extra-condensed;font-size:2rem;margin-bottom:12px}
-.cta-final h2 em{font-style:italic;color:var(--rose)}
-.cta-final .cta-sub{font-size:1rem;max-width:500px;margin:0 auto 30px;opacity:.9}
-.cta-final .cta-preco{font-family:'Noto Serif Display',serif;font-stretch:extra-condensed;font-size:2.4rem;font-weight:700;margin-bottom:6px}
-.cta-final .cta-parcela{font-size:1rem;margin-bottom:24px;opacity:.8}
-.cta-buttons{display:flex;flex-direction:column;gap:12px;align-items:center}
+    .btn-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 32px rgba(26,107,60,0.45);
+      color: var(--branco) !important;
+    }
 
-.rodape{background:var(--preto);color:var(--branco);padding:30px 20px;text-align:center;font-size:.8rem;opacity:.7}
-.rodape a{color:var(--rose)}
+    .btn-cta:active { transform: translateY(0); }
 
-@media(max-width:480px){
-.hero h1{font-size:1.8rem}
-.hero-logo{max-width:160px}
-.hero-money{font-size:1.2rem}
-.btn-comprar{font-size:1rem;padding:16px 36px;width:100%}
-.btn-whatsapp{font-size:.9rem;padding:12px 32px;width:100%}
-.aovivo-grid{grid-template-columns:1fr}
-.paraquem-grid{grid-template-columns:1fr}
-.depo-card{min-width:260px;max-width:280px}
-.carrossel-btn{width:34px;height:34px;font-size:1.2rem}
-.bio-wrapper{flex-direction:column;text-align:center}
-.bio-img{width:180px;height:230px;margin:0 auto}
-.cta-final h2{font-size:1.6rem}
-.cta-final .cta-preco{font-size:2rem}
-}
-</style>
+    .btn-cta.disabled {
+      background: linear-gradient(135deg, #9a9a9a, #7a7a7a) !important;
+      cursor: not-allowed !important;
+      box-shadow: none !important;
+      transform: none !important;
+      pointer-events: none !important;
+    }
+
+    .encerrado-badge {
+      display: none;
+      background: #2c2c2c;
+      color: var(--branco);
+      text-align: center;
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      padding: 14px 24px;
+      border-radius: 10px;
+      margin-top: 14px;
+    }
+
+    /* ===================== HERO ===================== */
+    #hero {
+      background:
+        radial-gradient(ellipse at 70% 0%, rgba(201,168,130,0.22) 0%, transparent 65%),
+        radial-gradient(ellipse at 10% 100%, rgba(158,116,82,0.15) 0%, transparent 60%),
+        linear-gradient(160deg, var(--off-white) 0%, var(--bege-claro) 55%, var(--bege-medio) 100%);
+      padding: 96px 0 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239E7452' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    .hero__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero__tag {
+      display: inline-block;
+      background: linear-gradient(90deg, var(--marrom-claro), var(--marrom-medio));
+      color: var(--branco);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 7px 18px;
+      border-radius: 100px;
+      margin-bottom: 24px;
+    }
+
+    .hero__title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(2rem, 4.5vw, 3.2rem);
+      font-weight: 800;
+      color: var(--marrom-deep);
+      line-height: 1.18;
+      margin-bottom: 16px;
+    }
+
+    .hero__title em {
+      font-style: italic;
+      color: var(--marrom-medio);
+      font-weight: 600;
+    }
+
+    .hero__subtitle {
+      font-size: 0.98rem;
+      font-weight: 400;
+      color: var(--texto-suave);
+      line-height: 1.75;
+      margin-bottom: 40px;
+      max-width: 480px;
+    }
+
+    .hero__card {
+      background: var(--branco);
+      border-radius: 20px;
+      padding: 40px 36px;
+      box-shadow: 0 8px 40px var(--sombra-forte);
+      border: 1px solid rgba(201,168,130,0.25);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero__card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--marrom-claro), var(--marrom-escuro));
+    }
+
+    .hero__card-title {
+      font-size: 0.70rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--marrom-claro);
+      margin-bottom: 24px;
+    }
+
+    .hero__checklist {
+      list-style: none;
+      margin-bottom: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+    }
+
+    .hero__checklist li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.93rem;
+      font-weight: 500;
+      color: var(--texto-base);
+    }
+
+    .check-icon {
+      width: 22px;
+      height: 22px;
+      min-width: 22px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--marrom-claro), var(--marrom-medio));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .check-icon svg {
+      width: 11px;
+      height: 11px;
+      stroke: white;
+      stroke-width: 2.5;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .hero__divider {
+      border: none;
+      border-top: 1px solid var(--bege-medio);
+      margin: 28px 0;
+    }
+
+    .hero__price-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--texto-suave);
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .hero__price-installment {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--marrom-escuro);
+      line-height: 1;
+      margin-bottom: 4px;
+      letter-spacing: -0.02em;
+    }
+
+    .hero__price-installment span {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--texto-suave);
+    }
+
+    .hero__price-avista {
+      font-size: 0.82rem;
+      font-weight: 400;
+      color: var(--texto-suave);
+      margin-bottom: 24px;
+    }
+
+    .hero__urgency-text {
+      text-align: center;
+      font-size: 0.73rem;
+      color: var(--texto-suave);
+      margin-top: 14px;
+    }
+
+    /* ===================== MÓDULOS ===================== */
+    .modulo-card {
+      background: var(--branco);
+      border-radius: 20px;
+      padding: 36px 28px;
+      box-shadow: 0 6px 32px var(--sombra);
+      border: 1px solid rgba(201,168,130,0.20);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .modulo-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--marrom-claro), var(--marrom-medio));
+    }
+
+    .modulo-card--destaque {
+      background: linear-gradient(160deg, var(--marrom-medio) 0%, var(--marrom-escuro) 100%);
+      border: none;
+    }
+
+    .modulo-card--destaque::before { display: none; }
+
+    .modulo-icon {
+      width: 46px;
+      height: 46px;
+      background: linear-gradient(135deg, var(--bege-claro), var(--bege-medio));
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+    }
+
+    .modulo-card--destaque .modulo-icon { background: rgba(255,255,255,0.15); }
+
+    .modulo-icon svg {
+      width: 22px;
+      height: 22px;
+      stroke: var(--marrom-escuro);
+      fill: none;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .modulo-card--destaque .modulo-icon svg { stroke: var(--branco); }
+
+    .modulo-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--marrom-escuro);
+      margin-bottom: 16px;
+    }
+
+    .modulo-card--destaque .modulo-title { color: var(--branco); }
+
+    .modulo-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .modulo-list li {
+      font-size: 0.86rem;
+      color: var(--texto-suave);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .modulo-card--destaque .modulo-list li { color: rgba(255,255,255,0.82); }
+
+    .dot {
+      width: 5px;
+      height: 5px;
+      min-width: 5px;
+      background: var(--marrom-claro);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ===================== CHECK ITEM (recebera) ===================== */
+    .check-item {
+      background: var(--branco);
+      border-radius: 12px;
+      padding: 18px 22px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      box-shadow: 0 4px 16px var(--sombra);
+      border: 1px solid rgba(201,168,130,0.15);
+    }
+
+    .check-item p {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--texto-base);
+    }
+
+    /* DIFERENCIAL */
+    .dif-card {
+      background: var(--branco);
+      border-radius: 16px;
+      padding: 28px 24px;
+      box-shadow: 0 4px 20px var(--sombra);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .dif-card--destaque {
+      background: linear-gradient(135deg, var(--marrom-medio), var(--marrom-escuro));
+      box-shadow: 0 6px 28px rgba(107,76,48,0.30);
+    }
+
+    .dif-icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      background: var(--bege-claro);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .dif-card--destaque .dif-icon { background: rgba(255,255,255,0.15); }
+
+    .dif-icon svg {
+      width: 17px;
+      height: 17px;
+      stroke: var(--marrom-escuro);
+      fill: none;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .dif-card--destaque .dif-icon svg { stroke: var(--branco); }
+
+    .dif-title {
+      font-size: 0.92rem;
+      font-weight: 800;
+      color: var(--marrom-escuro);
+      letter-spacing: 0.04em;
+    }
+
+    .dif-card--destaque .dif-title { color: var(--branco); }
+
+    .dif-text {
+      font-size: 0.84rem;
+      color: var(--texto-suave);
+      line-height: 1.65;
+    }
+
+    .dif-card--destaque .dif-text { color: rgba(255,255,255,0.82); }
+
+    /* RESULTADO */
+    .resultado-item {
+      background: var(--branco);
+      border-radius: 11px;
+      padding: 15px 18px;
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      box-shadow: 0 3px 14px var(--sombra);
+    }
+
+    .resultado-item--destaque {
+      background: linear-gradient(135deg, var(--marrom-medio), var(--marrom-escuro));
+      box-shadow: 0 6px 24px rgba(107,76,48,0.30);
+    }
+
+    .resultado-item svg {
+      width: 15px;
+      height: 15px;
+      stroke: var(--marrom-claro);
+      fill: none;
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      flex-shrink: 0;
+    }
+
+    .resultado-item--destaque svg { stroke: var(--branco); }
+
+    .resultado-item p {
+      font-size: 0.87rem;
+      font-weight: 500;
+      color: var(--texto-base);
+    }
+
+    .resultado-item--destaque p { color: var(--branco); font-weight: 600; }
+
+    /* DEPOIMENTO */
+    .depo-card {
+      background: var(--branco);
+      border-radius: 20px;
+      padding: 34px 30px;
+      box-shadow: 0 6px 28px var(--sombra);
+      border: 1px solid rgba(201,168,130,0.18);
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      position: relative;
+    }
+
+    .depo-aspas {
+      position: absolute;
+      top: 22px;
+      right: 26px;
+      font-size: 3rem;
+      color: var(--bege-medio);
+      font-family: 'Cormorant Garamond', serif;
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .depo-stars { display: flex; gap: 2px; }
+    .depo-stars svg { width: 13px; height: 13px; fill: var(--marrom-claro); }
+
+    .depo-text {
+      font-size: 0.92rem;
+      color: var(--texto-base);
+      line-height: 1.78;
+      font-style: italic;
+    }
+
+    .depo-footer {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      border-top: 1px solid var(--bege-medio);
+      padding-top: 18px;
+    }
+
+    .depo-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--bege-claro), var(--marrom-claro));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      color: var(--marrom-escuro);
+      font-size: 0.92rem;
+      flex-shrink: 0;
+    }
+
+    .depo-name { font-size: 0.87rem; font-weight: 700; color: var(--texto-base); }
+    .depo-role { font-size: 0.75rem; color: var(--texto-suave); margin-top: 2px; }
+
+    /* PROF */
+    .prof-info-block { display: flex; align-items: flex-start; gap: 15px; }
+
+    .prof-icon-box {
+      width: 38px;
+      height: 38px;
+      min-width: 38px;
+      background: linear-gradient(135deg, var(--bege-claro), var(--bege-medio));
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .prof-icon-box svg {
+      width: 17px;
+      height: 17px;
+      stroke: var(--marrom-escuro);
+      fill: none;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    /* INVEST */
+    .invest-card {
+      background: var(--branco);
+      border-radius: 24px;
+      padding: 52px 44px;
+      box-shadow: 0 12px 56px var(--sombra-forte);
+      border: 1px solid rgba(201,168,130,0.25);
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .invest-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--marrom-claro), var(--marrom-escuro));
+    }
+
+    .invest-parcela {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--marrom-escuro);
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+
+    .footer-timer-block {
+      background: var(--branco);
+      border-radius: 14px;
+      padding: 18px 20px;
+      box-shadow: 0 4px 20px var(--sombra);
+      border: 1px solid rgba(201,168,130,0.20);
+      min-width: 76px;
+      text-align: center;
+    }
+
+    .footer-timer-num {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--marrom-escuro);
+      line-height: 1;
+    }
+
+    .footer-timer-label {
+      font-size: 0.60rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--texto-suave);
+      margin-top: 5px;
+    }
+
+    .ident-item {
+      background: var(--branco);
+      border-radius: 14px;
+      padding: 20px 24px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      box-shadow: 0 4px 20px var(--sombra);
+      border-left: 4px solid var(--marrom-claro);
+    }
+
+    .ident-dot {
+      width: 8px;
+      height: 8px;
+      min-width: 8px;
+      background: linear-gradient(135deg, var(--marrom-claro), var(--marrom-medio));
+      border-radius: 50%;
+      margin-top: 7px;
+      flex-shrink: 0;
+    }
+
+    .paraquem-item { display: flex; align-items: center; gap: 13px; }
+
+    .paraquem-dot {
+      width: 6px;
+      height: 6px;
+      min-width: 6px;
+      background: linear-gradient(135deg, var(--marrom-claro), var(--marrom-medio));
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 768px) {
+      .section { padding: 64px 0; }
+      #hero { padding: 64px 0 56px; }
+      .hero__inner { grid-template-columns: 1fr; gap: 36px; }
+      .hero__card { padding: 30px 22px; }
+      .grid-3 { grid-template-columns: 1fr !important; }
+      .grid-2 { grid-template-columns: 1fr !important; }
+      .grid-2-auto { grid-template-columns: 1fr !important; gap: 40px !important; }
+      .invest-card { padding: 36px 22px !important; }
+      .invest-parcela { font-size: 2.2rem !important; }
+      #recebera-grid { grid-template-columns: 1fr !important; }
+    }
+  </style>
 </head>
 <body>
 
-<!-- BARRA TOPO CONTADOR -->
-<div class="top-bar">
-<span class="serif">VAGAS LIMITADAS</span> &mdash; A aula ao vivo come&ccedil;a em:
-<div class="countdown" id="countdown">
-<div><span id="cd-days">--</span><small>dias</small></div>
-<div><span id="cd-hours">--</span><small>hrs</small></div>
-<div><span id="cd-mins">--</span><small>min</small></div>
-<div><span id="cd-secs">--</span><small>seg</small></div>
-</div>
-</div>
+  <!-- BARRA FIXA -->
+  <div id="urgency-bar">
+    <span class="bar-texto">ABERTURA RELÂMPAGO — ENCERRA EM</span>
+    <div class="bar-timer">
+      <div class="timer-bloco">
+        <span class="timer-num" id="bar-horas">00</span>
+        <span class="timer-leg">HORAS</span>
+      </div>
+      <span class="timer-sep">:</span>
+      <div class="timer-bloco">
+        <span class="timer-num" id="bar-minutos">00</span>
+        <span class="timer-leg">MIN</span>
+      </div>
+      <span class="timer-sep">:</span>
+      <div class="timer-bloco">
+        <span class="timer-num" id="bar-segundos">00</span>
+        <span class="timer-leg">SEG</span>
+      </div>
+    </div>
+  </div>
 
-<!-- ALERTA VAGAS -->
-<div class="vagas-alerta">
-As vagas s&atilde;o limitadas e esta turma <strong>n&atilde;o ter&aacute; repeti&ccedil;&atilde;o.</strong> Garanta a sua agora.
-</div>
+  <!-- HERO -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero__inner">
 
-<!-- HERO -->
-<section class="hero">
-<div class="container">
-<img src="logo-conexao-maternar.png" alt="Conex&atilde;o Maternar - Para Profissionais" class="hero-logo"><div class="hero-badge">CURSO AO VIVO + CERTIFICADO</div>
-<h1>Domine o <em>Taping P&oacute;s-Parto</em> e transforme seu atendimento em refer&ecirc;ncia.</h1>
-<p class="hero-money">Fature +R$ 10 mil por m&ecirc;s com atendimentos de Taping P&oacute;s-Parto</p>
-<p class="hero-sub">O curso pr&aacute;tico, ao vivo, que vai te dar seguran&ccedil;a para aplicar o taping no p&oacute;s-parto j&aacute; no dia seguinte &mdash; mesmo que voc&ecirc; nunca tenha tocado numa bandagem.</p>
-<div class="hero-data">
-S&aacute;bado, 16 de maio de 2026 &mdash; A partir das 9h ao vivo via Zoom
-<span>Vagas extremamente limitadas | Turma exclusiva</span>
-</div>
-<div class="hero-buttons">
-<a href="https://pay.kiwify.com.br/3GlInuJ" class="btn-comprar" target="_blank">QUERO MINHA VAGA AGORA</a>
-<a href="https://wa.me/5511945911300?text=Oi%20Thain%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20curso%20de%20Taping%20P%C3%B3s-Parto" class="btn-whatsapp" target="_blank">TENHO UMA D&Uacute;VIDA</a>
-</div>
-<img src="foto-thaina-taping.png" alt="Thain&aacute; Gaby segurando fita de taping" class="hero-img">
-</div>
-</section>
+        <div>
+          <span class="hero__tag">Abertura Relâmpago · 48 horas</span>
+          <h1 class="hero__title">Acesso à Masterclass<br><em>Taping Pós-Parto</em></h1>
+          <p class="hero__subtitle">Da teoria à prática — mais de 5 horas de conteúdo gravado ao vivo, com demonstração em modelo real e raciocínio clínico aplicado.</p>
+        </div>
 
-<!-- MISS&Atilde;O -->
-<div class="social-bar">
-<strong class="serif">O que a Conex&atilde;o Maternar espera:</strong>
-<p>Formar profissionais capacitadas tecnicamente e seguras para oferecer um atendimento de Taping P&oacute;s-Parto com excel&ecirc;ncia, humaniza&ccedil;&atilde;o e resultado real para as m&atilde;es.</p>
-</div>
+        <div class="hero__card">
+          <p class="hero__card-title">O que está incluso</p>
+          <ul class="hero__checklist">
+            <li><div class="check-icon"><svg viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1"/></svg></div>Acesso imediato</li>
+            <li><div class="check-icon"><svg viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1"/></svg></div>Mais de 5 horas de conteúdo</li>
+            <li><div class="check-icon"><svg viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1"/></svg></div>Teoria + prática em modelo real</li>
+            <li><div class="check-icon"><svg viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1"/></svg></div>Acesso por 6 meses</li>
+            <li><div class="check-icon"><svg viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1"/></svg></div>Aplicação clínica imediata</li>
+          </ul>
 
-<!-- DOR -->
-<section class="dor section-light">
-<div class="container">
-<h2>Voc&ecirc; estudou, se formou, fez p&oacute;s... <em>mas na hora de aplicar o taping, trava.</em></h2>
-<ul class="dor-lista">
-<li>Tem medo de machucar a paciente porque nunca praticou de verdade</li>
-<li>Assiste v&aacute;rias aulas gravadas, mas nenhuma tira suas d&uacute;vidas espec&iacute;ficas</li>
-<li>N&atilde;o sabe qual tens&atilde;o usar, qual corte fazer, por onde come&ccedil;ar</li>
-<li>Sente inseguran&ccedil;a de cobrar por um procedimento que ainda n&atilde;o domina</li>
-<li>Quer oferecer taping no p&oacute;s-parto mas tem receio de fazer errado e prejudicar a m&atilde;e</li>
-</ul>
-<div class="dor-destaque">
-A inseguran&ccedil;a n&atilde;o significa que voc&ecirc; &eacute; incapaz. Significa que <strong>ainda n&atilde;o te ensinaram do jeito certo: com pr&aacute;tica, ao vivo, com quem faz isso todos os dias.</strong>
-</div>
-</div>
-</section>
+          <hr class="hero__divider" />
 
-<!-- VIDEO -->
-<section class="video-section section-white">
-<div class="container">
-<h2 class="serif marrom">Assista e entenda o que te espera:</h2>
-<div class="video-wrapper">
-<video controls preload="metadata" poster="poster-video.jpg">
-<source src="video-thaina.mp4" type="video/mp4">
-Seu navegador n&atilde;o suporta v&iacute;deo.
-</video>
-</div>
-</div>
-</section>
+          <p class="hero__price-label">Investimento</p>
+          <p class="hero__price-installment"><span>12x de R$</span> 51<span style="font-size:1rem;">,40</span></p>
+          <p class="hero__price-avista">ou R$ 497,00 à vista</p>
 
-<!-- CONTE&Uacute;DO PROGRAM&Aacute;TICO -->
-<section class="conteudo section-dark">
-<div class="container">
-<h2>Conte&uacute;do <em>Program&aacute;tico</em></h2>
-<p class="conteudo-sub">Teoria e pr&aacute;tica ao vivo em um &uacute;nico dia de imers&atilde;o</p>
+          <a href="https://pay.kiwify.com.br/OKlG0Ee" class="btn-cta" id="cta-hero" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+            QUERO GARANTIR MEU ACESSO
+          </a>
+          <p class="hero__urgency-text">Abertura disponível por apenas 48 horas.</p>
+          <div class="encerrado-badge" id="badge-hero">INSCRIÇÕES ENCERRADAS</div>
+        </div>
 
-<div class="bloco">
-<div class="bloco-titulo bloco-titulo-accent">BLOCO TE&Oacute;RICO &mdash; Manh&atilde;</div>
-<ul class="bloco-lista">
-<li>Puerp&eacute;rio e per&iacute;odos do p&oacute;s-parto</li>
-<li>Tipos de parto</li>
-<li>Fases da cicatriza&ccedil;&atilde;o</li>
-<li>Fundamentos do Taping</li>
-<li>Propriedades da bandagem el&aacute;stica</li>
-<li>Zona terap&ecirc;utica e tens&otilde;es da fita</li>
-<li>Linhas de Langer</li>
-<li>Taping Contensivo</li>
-<li>Taping Linf&aacute;tico</li>
-<li>Tipos de cortes e tamanhos</li>
-<li>Contraindica&ccedil;&otilde;es</li>
-<li>Teste al&eacute;rgico</li>
-<li>Protocolo de atendimento p&oacute;s-parto</li>
-</ul>
-</div>
+      </div>
+    </div>
+  </section>
 
-<div class="bloco">
-<div class="bloco-titulo bloco-titulo-accent">BLOCO PR&Aacute;TICO &mdash; Tarde (Demonstra&ccedil;&atilde;o ao vivo)</div>
-<ul class="bloco-lista">
-<li>Materiais necess&aacute;rios</li>
-<li>Preparo da pele</li>
-<li>Preparo do tape</li>
-<li>T&eacute;cnica de aplica&ccedil;&atilde;o</li>
-<li>Erros comuns na aplica&ccedil;&atilde;o do Taping</li>
-<li>Orienta&ccedil;&otilde;es p&oacute;s-aplica&ccedil;&atilde;o para a paciente</li>
-<li>T&eacute;cnica de remo&ccedil;&atilde;o segura do taping</li>
-<li>Manejo de intercorr&ecirc;ncias</li>
-<li>Tira-d&uacute;vidas ao vivo</li>
-</ul>
-</div>
+  <!-- VOCÊ SE IDENTIFICA -->
+  <section class="section section--alt" id="identificacao">
+    <div class="container">
+      <div style="max-width:720px; margin:0 auto; text-align:center;">
+        <span class="section__eyebrow">Para quem é esta Masterclass</span>
+        <h2 class="section__title">Veja se a Masterclass<br>é pra você:</h2>
+      </div>
+      <div style="max-width:660px; margin:44px auto 0; display:flex; flex-direction:column; gap:14px;">
+        <div class="ident-item"><div class="ident-dot"></div><p style="font-size:0.93rem; font-weight:500; color:var(--texto-base); line-height:1.65;">Conhece o Taping Pós-Parto, mas ainda não se sente segura para aplicar.</p></div>
+        <div class="ident-item"><div class="ident-dot"></div><p style="font-size:0.93rem; font-weight:500; color:var(--texto-base); line-height:1.65;">Tem dúvidas sobre indicações e contraindicações.</p></div>
+        <div class="ident-item"><div class="ident-dot"></div><p style="font-size:0.93rem; font-weight:500; color:var(--texto-base); line-height:1.65;">Já estudou a técnica, mas não sabe como adaptá-la para diferentes casos.</p></div>
+        <div class="ident-item"><div class="ident-dot"></div><p style="font-size:0.93rem; font-weight:500; color:var(--texto-base); line-height:1.65;">Deseja oferecer um atendimento mais completo para suas pacientes.</p></div>
+        <div class="ident-item"><div class="ident-dot"></div><p style="font-size:0.93rem; font-weight:500; color:var(--texto-base); line-height:1.65;">Quer se destacar profissionalmente na área da Saúde da Mulher.</p></div>
+        <div style="background:linear-gradient(135deg, var(--marrom-medio), var(--marrom-escuro)); border-radius:14px; padding:26px 30px; text-align:center; margin-top:6px; box-shadow:0 8px 32px rgba(107,76,48,0.28);">
+          <p style="font-size:0.98rem; font-weight:600; color:var(--branco); line-height:1.7;">Se você respondeu <strong style="font-weight:800;">SIM</strong> para qualquer um desses pontos,<br>esta Masterclass foi criada para você.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div style="text-align:center;margin-top:30px;">
-<a href="https://pay.kiwify.com.br/3GlInuJ" class="btn-comprar" style="background:var(--rose);color:var(--marrom);border-color:var(--rose);" target="_blank">GARANTIR MINHA VAGA &mdash; VAGAS LIMITADAS</a>
-</div>
-</div>
-</section>
-<!-- STACK DE OFERTA -->
-<section class="stack section-light" style="padding:60px 20px;">
-<div class="container text-center">
-<h2 class="serif" style="font-size:1.8rem;margin-bottom:8px;">Olha tudo que voc&ecirc; <em class="serif-italic accent">recebe:</em></h2>
-<p style="margin-bottom:36px;font-size:.95rem;opacity:.8;">Muito mais do que um curso &mdash; uma experi&ecirc;ncia completa para voc&ecirc; atender com seguran&ccedil;a.</p>
+  <!-- O QUE VOCÊ VAI APRENDER -->
+  <section class="section" id="conteudo">
+    <div class="container">
+      <div style="max-width:720px; margin:0 auto; text-align:center;">
+        <span class="section__eyebrow">Conteúdo</span>
+        <h2 class="section__title">O que você vai aprender</h2>
+        <p style="font-size:0.95rem; color:var(--texto-suave); line-height:1.75; max-width:560px; margin:0 auto 52px;">Mais de 5 horas de conteúdo estruturado para levar você do conhecimento à aplicação clínica com segurança.</p>
+      </div>
+      <div class="grid-3" style="display:grid; grid-template-columns:repeat(3,1fr); gap:26px;">
 
-<div class="stack-table">
-<div class="stack-row stack-header">
-<span>O que voc&ecirc; recebe</span>
-<span>Valor real</span>
-</div>
-<div class="stack-row">
-<span>Curso completo ao vivo &mdash; 16/05 a partir das 9h via Zoom</span>
-<span class="stack-price">R$ 997</span>
-</div>
-<div class="stack-row">
-<span>Grava&ccedil;&atilde;o por 6 meses dividida em m&oacute;dulos</span>
-<span class="stack-price">R$ 797</span>
-</div>
-<div class="stack-row">
-<span>Suporte por 6 meses com a Conex&atilde;o Maternar no WhatsApp</span>
-<span class="stack-price">R$ 997</span>
-</div>
-<div class="stack-row">
-<span>Ficha de anamnese &mdash; modelo pronto para usar</span>
-<span class="stack-price">R$ 197</span>
-</div>
-<div class="stack-row">
-<span>Aula exclusiva: Proposta Comercial</span>
-<span class="stack-price">R$ 297</span>
-</div>
-<div class="stack-row">
-<span>Lista de materiais com links de compra</span>
-<span class="stack-price">R$ 97</span>
-</div>
-<div class="stack-row">
-<span>Lista de fornecedores recomendados</span>
-<span class="stack-price">R$ 97</span>
-</div>
-<div class="stack-row">
-<span>Certificado de 10 horas</span>
-<span class="stack-price">R$ 97</span>
-</div>
-<div class="stack-row stack-total">
-<span>VALOR TOTAL</span>
-<span>R$ 3.576</span>
-</div>
-</div>
+        <div class="modulo-card">
+          <div class="modulo-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3 class="modulo-title">Fundamentos do Taping</h3>
+          <ul class="modulo-list">
+            <li><span class="dot"></span>Conceitos fundamentais</li>
+            <li><span class="dot"></span>Mecanismos de ação</li>
+            <li><span class="dot"></span>Bases científicas</li>
+            <li><span class="dot"></span>Avaliação clínica</li>
+          </ul>
+        </div>
 
-<div class="preco-box">
-<p class="preco-de">Mas voc&ecirc; n&atilde;o vai pagar R$ 3.576.</p>
-<p class="preco-de2">Nem R$ 1.997.</p>
-<p class="preco-label">Seu investimento hoje:</p>
-<div class="preco-valor">R$ 997 <span>&agrave; vista</span></div>
-<div class="preco-parcela">ou 12x de R$ 103,11</div>
-<p style="margin-top:12px;font-size:.85rem;color:var(--marrom-claro);font-weight:600;letter-spacing:.5px;">VAGAS LIMITADAS &mdash; TURMA EXCLUSIVA</p>
-<div style="margin-top:20px;display:flex;flex-direction:column;gap:12px;align-items:center;">
-<a href="https://pay.kiwify.com.br/3GlInuJ" class="btn-comprar" target="_blank">QUERO MINHA VAGA AGORA</a>
-<a href="https://wa.me/5511945911300?text=Oi%20Thain%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20curso%20de%20Taping%20P%C3%B3s-Parto" class="btn-whatsapp" target="_blank">TENHO UMA D&Uacute;VIDA</a>
-</div>
-</div>
-</div>
-</section>
+        <div class="modulo-card modulo-card--destaque">
+          <div class="modulo-icon">
+            <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          </div>
+          <h3 class="modulo-title">Indicações e Raciocínio Clínico</h3>
+          <ul class="modulo-list">
+            <li><span class="dot"></span>Quando indicar</li>
+            <li><span class="dot"></span>Quando evitar</li>
+            <li><span class="dot"></span>Planejamento das aplicações</li>
+            <li><span class="dot"></span>Tomada de decisão clínica</li>
+          </ul>
+        </div>
 
-<!-- A CONTA QUE FAZ SENTIDO -->
-<section class="conta section-dark" style="padding:60px 20px;">
-<div class="container text-center">
-<h2 class="serif" style="font-size:1.8rem;margin-bottom:24px;">A conta que <em class="serif-italic accent">faz sentido</em></h2>
-<div class="conta-card">
-<p>Um &uacute;nico atendimento de Taping P&oacute;s-Parto custa <strong>a partir de R$ 400.</strong></p>
-<div class="conta-destaque">
-<span class="serif" style="font-size:1.4rem;">Isso significa que com apenas 2 a 3 atendimentos voc&ecirc; j&aacute; recupera o valor total do curso.</span>
-</div>
-<p style="margin-top:16px;font-size:.95rem;opacity:.85;">O resto &eacute; lucro &mdash; e voc&ecirc; ainda ganha seguran&ccedil;a, diferencial competitivo e uma nova fonte de renda recorrente.</p>
-</div>
-</div>
-</section>
+        <div class="modulo-card">
+          <div class="modulo-icon">
+            <svg viewBox="0 0 24 24"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          </div>
+          <h3 class="modulo-title">Aplicação Prática</h3>
+          <ul class="modulo-list">
+            <li><span class="dot"></span>Demonstração em modelo real</li>
+            <li><span class="dot"></span>Posicionamento correto</li>
+            <li><span class="dot"></span>Passo a passo</li>
+            <li><span class="dot"></span>Estratégias da prática clínica</li>
+          </ul>
+        </div>
 
-<!-- ALERTA VAGAS MEIO -->
-<div class="vagas-alerta">
-Restam poucas vagas para a turma de 16 de maio. <strong>N&atilde;o deixe para depois.</strong>
-</div>
+      </div>
+    </div>
+  </section>
 
-<!-- POR QUE AO VIVO -->
-<section class="aovivo section-light" style="padding:60px 20px;">
-<div class="container text-center">
-<h2 class="serif" style="font-size:1.8rem;margin-bottom:24px;">Por que <em class="serif-italic accent">ao vivo?</em></h2>
-<div class="aovivo-grid">
-<div class="aovivo-item">
-<div class="aovivo-icon">&#9678;</div>
-<h3>Pr&aacute;tica real, n&atilde;o simulada</h3>
-<p>Voc&ecirc; assiste &agrave; aplica&ccedil;&atilde;o em tempo real e entende cada movimento.</p>
-</div>
-<div class="aovivo-item">
-<div class="aovivo-icon">&#9678;</div>
-<h3>D&uacute;vidas respondidas na hora</h3>
-<p>Nada de mandar pergunta e esperar dias. Aqui voc&ecirc; tira d&uacute;vida ao vivo.</p>
-</div>
-<div class="aovivo-item">
-<div class="aovivo-icon">&#9678;</div>
-<h3>Corre&ccedil;&atilde;o em tempo real</h3>
-<p>A Thain&aacute; corrige, ajusta e guia voc&ecirc; durante toda a imers&atilde;o.</p>
-</div>
-<div class="aovivo-item">
-<div class="aovivo-icon">&#9678;</div>
-<h3>Grava&ccedil;&atilde;o dispon&iacute;vel por 6 meses</h3>
-<p>Reassista quantas vezes quiser, no seu tempo, dividido em m&oacute;dulos.</p>
-</div>
-</div>
-</div>
-</section>
+  <!-- NÃO É SOBRE COLAR UMA FITA -->
+  <section class="section section--alt" id="diferenciais">
+    <div class="container">
+      <div style="max-width:780px; margin:0 auto;">
+        <div style="text-align:center; margin-bottom:52px;">
+          <span class="section__eyebrow">O verdadeiro diferencial</span>
+          <h2 class="section__title">Não é sobre apenas<br>colar uma fita</h2>
+          <p style="font-size:0.95rem; color:var(--texto-suave); line-height:1.75; max-width:540px; margin:0 auto;">Muitos profissionais aprendem apenas o desenho da aplicação. O verdadeiro diferencial está em entender o raciocínio clínico por trás de cada conduta.</p>
+        </div>
+        <div class="grid-2" style="display:grid; grid-template-columns:repeat(2,1fr); gap:20px;">
+          <div class="dif-card">
+            <div class="dif-icon"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+            <p class="dif-title">COMO aplicar</p>
+            <p class="dif-text">Técnica correta de posicionamento, tensão e fixação em cada protocolo.</p>
+          </div>
+          <div class="dif-card">
+            <div class="dif-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+            <p class="dif-title">QUANDO aplicar</p>
+            <p class="dif-text">Indicações e contraindicações para tomada de decisão segura e eficiente.</p>
+          </div>
+          <div class="dif-card">
+            <div class="dif-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+            <p class="dif-title">POR QUE aplicar</p>
+            <p class="dif-text">Bases científicas e mecanismos de ação que sustentam cada conduta clínica.</p>
+          </div>
+          <div class="dif-card dif-card--destaque">
+            <div class="dif-icon"><svg viewBox="0 0 24 24"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 014-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 01-4 4H3"/></svg></div>
+            <p class="dif-title">COMO adaptar</p>
+            <p class="dif-text">Estratégias para adaptar a técnica às diferentes necessidades do pós-parto.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- PARA QUEM &Eacute; / N&Atilde;O &Eacute; -->
-<section class="paraquem section-white" style="padding:60px 20px;">
-<div class="container">
-<h2 class="serif text-center" style="font-size:1.8rem;margin-bottom:36px;">Para quem &eacute; <em class="serif-italic accent">este curso?</em></h2>
-<div class="paraquem-grid">
-<div class="paraquem-box paraquem-sim">
-<h3>ESTE CURSO &Eacute; PARA VOC&Ecirc; SE:</h3>
-<ul>
-<li>&Eacute; enfermeira, obstetriz, fisioterapeuta ou doula</li>
-<li>Quer oferecer Taping P&oacute;s-Parto com seguran&ccedil;a t&eacute;cnica</li>
-<li>Precisa de pr&aacute;tica real, n&atilde;o s&oacute; teoria</li>
-<li>Quer criar um diferencial que gera renda recorrente</li>
-<li>Busca uma mentora que atende de verdade, todos os dias</li>
-</ul>
-</div>
-<div class="paraquem-box paraquem-nao">
-<h3>N&Atilde;O &Eacute; PARA VOC&Ecirc; SE:</h3>
-<ul>
-<li>Busca apenas um certificado para pendurar na parede</li>
-<li>N&atilde;o pretende colocar em pr&aacute;tica o que aprender</li>
-<li>Quer um curso 100% gravado sem intera&ccedil;&atilde;o</li>
-<li>N&atilde;o tem nenhuma forma&ccedil;&atilde;o na &aacute;rea da sa&uacute;de</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
+  <!-- COM QUEM VOCÊ IRÁ APRENDER -->
+  <section class="section" id="professora">
+    <div class="container">
+      <div class="grid-2-auto" style="display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center;">
+        <div style="position:relative;">
+          <div style="position:absolute; inset:-14px; background:linear-gradient(135deg, var(--bege-claro), var(--bege-medio)); border-radius:26px; z-index:0;"></div>
+          <div style="position:relative; z-index:1; border-radius:18px; overflow:hidden; box-shadow:0 16px 56px var(--sombra-forte);">
+            <img src="foto-thaina.png" alt="Thainá — Fisioterapeuta especializada em Saúde da Mulher" style="width:100%; display:block;" />
+          </div>
+          <div style="position:absolute; bottom:-18px; right:-18px; background:var(--branco); border-radius:14px; padding:16px 22px; box-shadow:0 8px 32px var(--sombra-forte); z-index:2; border:1px solid rgba(201,168,130,0.25); text-align:center;">
+            <p style="font-size:1.5rem; font-weight:800; color:var(--marrom-escuro); line-height:1;">700+</p>
+            <p style="font-size:0.68rem; font-weight:600; color:var(--texto-suave); letter-spacing:0.08em; text-transform:uppercase; margin-top:4px;">atendimentos<br>realizados</p>
+          </div>
+        </div>
+        <div>
+          <span class="section__eyebrow">Com quem você irá aprender</span>
+          <h2 class="section__title">Thainá</h2>
+          <div style="display:flex; flex-direction:column; gap:18px; margin-top:12px;">
+            <div class="prof-info-block">
+              <div class="prof-icon-box"><svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+              <div>
+                <p style="font-size:0.92rem; font-weight:700; color:var(--texto-base); margin-bottom:4px;">Formação</p>
+                <p style="font-size:0.86rem; color:var(--texto-suave); line-height:1.65;">Fisioterapeuta especializada em Saúde da Mulher. Pós-graduada na área.</p>
+              </div>
+            </div>
+            <div class="prof-info-block">
+              <div class="prof-icon-box"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+              <div>
+                <p style="font-size:0.92rem; font-weight:700; color:var(--texto-base); margin-bottom:4px;">Experiência</p>
+                <p style="font-size:0.86rem; color:var(--texto-suave); line-height:1.65;">Mais de 700 atendimentos realizados na maternidade e no acompanhamento de mulheres durante a jornada do pós-parto.</p>
+              </div>
+            </div>
+            <div class="prof-info-block">
+              <div class="prof-icon-box"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+              <div>
+                <p style="font-size:0.92rem; font-weight:700; color:var(--texto-base); margin-bottom:4px;">Metodologia</p>
+                <p style="font-size:0.86rem; color:var(--texto-suave); line-height:1.65;">Todo o conteúdo desta Masterclass foi construído com base na experiência prática adquirida ao longo desses atendimentos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+html
+  <!-- O QUE VOCÊ RECEBERÁ -->
+  <section class="section section--alt" id="recebera">
+    <div class="container">
+      <div style="max-width:720px; margin:0 auto; text-align:center;">
+        <span class="section__eyebrow">Tudo incluso</span>
+        <h2 class="section__title">O que você receberá</h2>
+      </div>
+      <div id="recebera-grid" style="max-width:640px; margin:44px auto 0; display:grid; grid-template-columns:1fr 1fr; gap:14px;">
+        <div class="check-item">
+          <div class="check-icon"><svg viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1"/></svg></div>
+          <p>Acesso imediato</p>
+        </div>
+        <div class="check-item">
+          <div class="check-icon"><svg viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1"/></svg></div>
+          <p>Mais de 5h de conteúdo</p>
+        </div>
+        <div class="check-item">
+          <div class="check-icon"><svg viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1"/></svg></div>
+          <p>Bloco teórico completo</p>
+        </div>
+        <div class="check-item">
+          <div class="check-icon"><svg viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1"/></svg></div>
+          <p>Bloco prático completo</p>
+        </div>
+        <div class="check-item">
+          <div class="check-icon"><svg viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1"/></svg></div>
+          <p>Demonstrações em modelo real</p>
+        </div>
+        <div class="check-item">
+          <div class="check-icon"><svg viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1"/></svg></div>
+          <p>Acesso por 6 meses</p>
+        </div>
+        <div class="check-item" style="grid-column:1/-1;">
+          <div class="check-icon"><svg viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1"/></svg></div>
+          <p>Assista quantas vezes desejar</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- DEPOIMENTOS CARROSSEL -->
-<section class="depoimentos section-cream" style="padding:60px 20px;">
-<div class="container text-center">
-<h2 class="serif" style="font-size:1.8rem;margin-bottom:8px;">Quem j&aacute; fez, <em class="serif-italic accent">recomenda:</em></h2>
-<p style="margin-bottom:36px;font-size:.95rem;opacity:.8;">Arraste para ver mais depoimentos</p>
+  <!-- PARA QUEM É + RESULTADOS -->
+  <section class="section" id="para-quem">
+    <div class="container">
+      <div class="grid-2-auto" style="display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start;">
+        <div>
+          <span class="section__eyebrow">Público</span>
+          <h2 class="section__title">Para quem é<br>esta Masterclass</h2>
+          <p style="font-size:0.93rem; color:var(--texto-suave); line-height:1.75; margin-bottom:28px;">Desenvolvida para profissionais que atuam ou desejam atuar com mulheres no pós-parto e querem dominar o Taping com segurança clínica.</p>
+          <div style="display:flex; flex-direction:column; gap:13px;">
+            <div class="paraquem-item"><div class="paraquem-dot"></div><p style="font-size:0.92rem; font-weight:500; color:var(--texto-base);">Fisioterapeutas</p></div>
+            <div class="paraquem-item"><div class="paraquem-dot"></div><p style="font-size:0.92rem; font-weight:500; color:var(--texto-base);">Fisioterapeutas Pélvicas</p></div>
+            <div class="paraquem-item"><div class="paraquem-dot"></div><p style="font-size:0.92rem; font-weight:500; color:var(--texto-base);">Profissionais da Saúde da Mulher</p></div>
+            <div class="paraquem-item"><div class="paraquem-dot"></div><p style="font-size:0.92rem; font-weight:500; color:var(--texto-base);">Estudantes da área</p></div>
+            <div class="paraquem-item"><div class="paraquem-dot"></div><p style="font-size:0.92rem; font-weight:500; color:var(--texto-base);">Profissionais que desejam ampliar seus recursos terapêuticos</p></div>
+          </div>
+        </div>
+        <div>
+          <span class="section__eyebrow">Resultados</span>
+          <h2 class="section__title">O que você será<br>capaz de fazer</h2>
+          <div style="display:flex; flex-direction:column; gap:11px; margin-top:8px;">
+            <div class="resultado-item">
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+              <p>Realizar aplicações com mais segurança</p>
+            </div>
+            <div class="resultado-item">
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+              <p>Entender indicações e contraindicações</p>
+            </div>
+            <div class="resultado-item">
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+              <p>Estruturar seu raciocínio clínico</p>
+            </div>
+            <div class="resultado-item">
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+              <p>Aplicar protocolos de forma estratégica</p>
+            </div>
+            <div class="resultado-item">
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+              <p>Entregar mais valor às suas pacientes</p>
+            </div>
+            <div class="resultado-item resultado-item--destaque">
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+              <p>Diferenciar-se profissionalmente</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div class="carrossel-container">
-<div class="carrossel-track" id="carrosselTrack">
+  <!-- DEPOIMENTOS -->
+  <section class="section section--alt" id="depoimentos">
+    <div class="container">
+      <div style="max-width:720px; margin:0 auto; text-align:center;">
+        <span class="section__eyebrow">Depoimentos</span>
+        <h2 class="section__title">O que dizem quem já aprendeu</h2>
+      </div>
+      <div class="grid-2" style="display:grid; grid-template-columns:repeat(2,1fr); gap:22px; margin-top:52px;">
 
-<div class="depo-card">
-<div class="depo-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-<p>&ldquo;Eu j&aacute; tinha feito outros cursos, mas nenhum me deu a seguran&ccedil;a que esse deu. A Thain&aacute; explica de um jeito que voc&ecirc; realmente entende e consegue aplicar no dia seguinte.&rdquo;</p>
-<strong>&mdash; Camila R.</strong>
-<span>Enfermeira Obstetra</span>
-</div>
+        <div class="depo-card">
+          <div class="depo-aspas">"</div>
+          <div class="depo-stars">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="depo-text">"Eu já tinha visto vídeos sobre Taping, mas nunca havia entendido de verdade o raciocínio por trás. A Masterclass mudou completamente a forma como eu enxergo a técnica. Saí com segurança para aplicar já na semana seguinte."</p>
+          <div class="depo-footer">
+            <div class="depo-avatar">C</div>
+            <div>
+              <p class="depo-name">Camila R.</p>
+              <p class="depo-role">Fisioterapeuta · São Paulo, SP</p>
+            </div>
+          </div>
+        </div>
 
-<div class="depo-card">
-<div class="depo-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-<p>&ldquo;O curso ao vivo faz toda a diferen&ccedil;a. Eu consegui tirar todas as minhas d&uacute;vidas na hora. Sa&iacute; da aula pronta para atender.&rdquo;</p>
-<strong>&mdash; Fernanda M.</strong>
-<span>Fisioterapeuta P&eacute;lvica</span>
-</div>
+        <div class="depo-card">
+          <div class="depo-aspas">"</div>
+          <div class="depo-stars">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="depo-text">"Como enfermeira, eu achei que o Taping era uma técnica exclusiva da fisioterapia. A Masterclass me mostrou como posso integrar isso no meu trabalho com mulheres no pós-parto de forma segura e embasada."</p>
+          <div class="depo-footer">
+            <div class="depo-avatar">F</div>
+            <div>
+              <p class="depo-name">Fernanda M.</p>
+              <p class="depo-role">Enfermeira · Belo Horizonte, MG</p>
+            </div>
+          </div>
+        </div>
 
-<div class="depo-card">
-<div class="depo-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-<p>&ldquo;Melhor investimento que fiz na minha carreira. Em uma semana j&aacute; tinha recuperado o valor do curso com atendimentos de taping.&rdquo;</p>
-<strong>&mdash; Juliana S.</strong>
-<span>Enfermeira</span>
-</div>
+        <div class="depo-card">
+          <div class="depo-aspas">"</div>
+          <div class="depo-stars">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="depo-text">"Trabalho com pós-parto há anos e sempre indicava o Taping para outras profissionais. Depois da Masterclass, passei a oferecer eu mesma. O passo a passo em modelo real fez toda a diferença para eu sair da teoria."</p>
+          <div class="depo-footer">
+            <div class="depo-avatar">J</div>
+            <div>
+              <p class="depo-name">Juliana S.</p>
+              <p class="depo-role">Doula · Curitiba, PR</p>
+            </div>
+          </div>
+        </div>
 
-<div class="depo-card">
-<div class="depo-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-<p>&ldquo;A Thain&aacute; &eacute; uma profissional incr&iacute;vel. Ela n&atilde;o ensina s&oacute; t&eacute;cnica, ensina como criar um atendimento humanizado que a paciente nunca esquece.&rdquo;</p>
-<strong>&mdash; Patr&iacute;cia L.</strong>
-<span>Doula e Enfermeira</span>
-</div>
+        <div class="depo-card">
+          <div class="depo-aspas">"</div>
+          <div class="depo-stars">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="depo-text">"Aqui no Nordeste a gente não tem acesso fácil a capacitações presenciais de qualidade. A Masterclass chegou no momento certo — conteúdo sólido, linguagem acessível e prática real. Recomendo sem hesitar."</p>
+          <div class="depo-footer">
+            <div class="depo-avatar">M</div>
+            <div>
+              <p class="depo-name">Mariana C.</p>
+              <p class="depo-role">Fisioterapeuta · Fortaleza, CE</p>
+            </div>
+          </div>
+        </div>
 
-<div class="depo-card">
-<div class="depo-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-<p>&ldquo;Eu tinha muito medo de fazer errado. Depois do curso, atendo com confian&ccedil;a total. O suporte no WhatsApp &eacute; um diferencial absurdo.&rdquo;</p>
-<strong>&mdash; Amanda C.</strong>
-<span>Obstetriz</span>
-</div>
+      </div>
+    </div>
+  </section>
 
-<div class="depo-card">
-<div class="depo-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-<p>&ldquo;Conte&uacute;do completo, did&aacute;tica perfeita e ainda tem o b&ocirc;nus da proposta comercial que me ajudou a precificar meus atendimentos. Super recomendo.&rdquo;</p>
-<strong>&mdash; Renata B.</strong>
-<span>Enfermeira Obstetra</span>
-</div>
+  <!-- INVESTIMENTO -->
+  <section class="section" id="investimento">
+    <div class="container">
+      <div style="max-width:580px; margin:0 auto; text-align:center;">
+        <span class="section__eyebrow">Investimento</span>
+        <h2 class="section__title">Masterclass Taping Pós-Parto</h2>
+        <p style="font-size:0.93rem; color:var(--texto-suave); line-height:1.75; margin-bottom:44px;">Da teoria à prática. Mais de 5 horas de conteúdo. Acesso por 6 meses.</p>
 
-</div>
-<button class="carrossel-btn carrossel-prev" id="carrosselPrev" aria-label="Anterior">&#8249;</button>
-<button class="carrossel-btn carrossel-next" id="carrosselNext" aria-label="Pr&oacute;ximo">&#8250;</button>
-</div>
-</div>
-</section>
+        <div class="invest-card">
+          <p style="font-size:0.70rem; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--texto-suave); margin-bottom:10px;">Acesso completo</p>
 
-<!-- QUEM &Eacute; THAIN&Aacute; -->
-<section class="bio section-dark" style="padding:60px 20px;">
-<div class="container">
-<div class="bio-wrapper">
-<div class="bio-img-wrap">
-<img src="foto-thaina-aplicando.jpg" alt="Thain&aacute; Gaby aplicando taping p&oacute;s-parto" class="bio-img">
-</div>
-<div class="bio-text">
-<p class="bio-label">QUEM VAI TE ENSINAR</p>
-<h2 class="serif" style="font-size:2rem;margin-bottom:16px;">Thain&aacute; <em class="serif-italic accent">Gaby</em></h2>
-<p><strong class="accent">Fisioterapeuta</strong> especializada em Sa&uacute;de da Mulher.</p>
-<p><strong class="accent">Pioneira em Taping P&oacute;s-Parto</strong> com mais de 700 atendimentos realizados.</p>
-<p>Criadora da Conex&atilde;o Maternar, desenvolveu um m&eacute;todo pr&aacute;tico e seguro que permite profissionais da sa&uacute;de aplicarem o taping com confian&ccedil;a desde o primeiro atendimento.</p>
-<p style="margin-top:16px;"><strong class="accent">Ela n&atilde;o ensina o que leu num livro. Ela ensina o que faz todos os dias.</strong></p>
-</div>
-</div>
-</div>
-</section>
+          <p class="invest-parcela">
+            <span style="font-size:1rem; font-weight:600; color:var(--texto-suave); vertical-align:baseline;">12x de R$</span> 51<span style="font-size:1.1rem; color:var(--texto-suave);">,40</span>
+          </p>
+          <p style="font-size:0.78rem; color:var(--texto-suave); margin-top:4px; margin-bottom:4px;">por mês no cartão</p>
+          <p style="font-size:0.86rem; font-weight:500; color:var(--texto-suave); margin-bottom:30px;">ou R$ 497,00 à vista</p>
 
-<!-- ALERTA VAGAS -->
-<div class="vagas-alerta" style="background:var(--marrom);color:var(--branco);">
-As vagas est&atilde;o se esgotando. <strong style="color:var(--rose);">Garanta a sua antes que acabe.</strong>
-</div>
+          <a href="https://pay.kiwify.com.br/OKlG0Ee" class="btn-cta" id="cta-investimento" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+            QUERO ACESSAR AGORA
+          </a>
+          <div class="encerrado-badge" id="badge-investimento">INSCRIÇÕES ENCERRADAS</div>
+          <p style="font-size:0.72rem; color:var(--texto-suave); margin-top:14px;">Abertura disponível por apenas 48 horas.</p>
+        </div>
 
-<!-- FAQ -->
-<section class="faq section-white">
-<div class="container">
-<h2>Perguntas <em class="serif-italic accent">frequentes</em></h2>
+        <!-- CONTADOR FINAL -->
+        <div style="margin-top:52px;">
+          <p style="font-size:0.70rem; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--texto-suave); margin-bottom:22px;">Esta página encerra em</p>
+          <div style="display:flex; justify-content:center; align-items:center; gap:10px; flex-wrap:wrap;">
+            <div class="footer-timer-block">
+              <p class="footer-timer-num" id="footer-dias">00</p>
+              <p class="footer-timer-label">Dias</p>
+            </div>
+            <span style="font-size:1.5rem; font-weight:700; color:var(--marrom-claro); margin-bottom:10px;">:</span>
+            <div class="footer-timer-block">
+              <p class="footer-timer-num" id="footer-horas">00</p>
+              <p class="footer-timer-label">Horas</p>
+            </div>
+            <span style="font-size:1.5rem; font-weight:700; color:var(--marrom-claro); margin-bottom:10px;">:</span>
+            <div class="footer-timer-block">
+              <p class="footer-timer-num" id="footer-minutos">00</p>
+              <p class="footer-timer-label">Min</p>
+            </div>
+            <span style="font-size:1.5rem; font-weight:700; color:var(--marrom-claro); margin-bottom:10px;">:</span>
+            <div class="footer-timer-block">
+              <p class="footer-timer-num" id="footer-segundos">00</p>
+              <p class="footer-timer-label">Seg</p>
+            </div>
+          </div>
+        </div>
 
-<div class="faq-item">
-<div class="faq-question">Preciso ter experi&ecirc;ncia pr&eacute;via com taping?</div>
-<div class="faq-answer"><p>N&atilde;o. O curso foi pensado para quem nunca aplicou taping e tamb&eacute;m para quem j&aacute; aplica mas quer mais seguran&ccedil;a t&eacute;cnica. Come&ccedil;amos do zero.</p></div>
-</div>
+        <div style="margin-top:36px;">
+          <a href="https://pay.kiwify.com.br/OKlG0Ee" class="btn-cta" id="cta-final" target="_blank" rel="noopener" style="max-width:460px; margin:0 auto;">
+            <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+            GARANTIR MEU ACESSO
+          </a>
+          <div class="encerrado-badge" id="badge-final" style="max-width:460px; margin:14px auto 0;">INSCRIÇÕES ENCERRADAS</div>
+        </div>
 
-<div class="faq-item">
-<div class="faq-question">Quais profissionais podem fazer o curso?</div>
-<div class="faq-answer"><p>Enfermeiras, enfermeiras obstetras, obstetrizes, fisioterapeutas, fisioterapeutas p&eacute;lvicas e doulas. O conte&uacute;do &eacute; voltado para profissionais da sa&uacute;de que atuam ou querem atuar no p&oacute;s-parto.</p></div>
-</div>
+      </div>
+    </div>
+  </section>
 
-<div class="faq-item">
-<div class="faq-question">O curso &eacute; ao vivo mesmo? E se eu n&atilde;o puder assistir no dia?</div>
-<div class="faq-answer"><p>Sim, 100% ao vivo via Zoom no s&aacute;bado, dia 16/05, a partir das 9h. Mas n&atilde;o se preocupe: a grava&ccedil;&atilde;o fica dispon&iacute;vel por 6 meses, dividida em m&oacute;dulos, para voc&ecirc; reassistir quando quiser.</p></div>
-</div>
+  <!-- RODAPÉ -->
+  <footer style="background:var(--marrom-deep); padding:40px 24px; text-align:center;">
+    <p style="font-size:0.76rem; color:rgba(255,255,255,0.38); letter-spacing:0.06em; line-height:1.8;">© 2026 Masterclass Taping Pós-Parto · Todos os direitos reservados</p>
+    <p style="font-size:0.70rem; color:rgba(255,255,255,0.22); margin-top:8px; letter-spacing:0.04em;">www.cursotapingposparto.com.br</p>
+  </footer>
 
-<div class="faq-item">
-<div class="faq-question">Vou receber certificado?</div>
-<div class="faq-answer"><p>Sim. Certificado de 10 horas emitido pela Conex&atilde;o Maternar, enviado ap&oacute;s a conclus&atilde;o do curso.</p></div>
-</div>
+  <!-- JAVASCRIPT CONTADOR -->
+  <script>
+    const DEADLINE = new Date('2026-06-18T12:00:00-03:00').getTime();
 
-<div class="faq-item">
-<div class="faq-question">Como funciona o suporte de 6 meses?</div>
-<div class="faq-answer"><p>Voc&ecirc; ter&aacute; acesso a um grupo exclusivo no WhatsApp com a Conex&atilde;o Maternar por 6 meses para tirar d&uacute;vidas sobre t&eacute;cnica, atendimento e aplica&ccedil;&atilde;o. Suporte real com quem faz isso todos os dias.</p></div>
-</div>
+    function pad(n) { return String(n).padStart(2, '0'); }
 
-<div class="faq-item">
-<div class="faq-question">Posso parcelar?</div>
-<div class="faq-answer"><p>Sim. Voc&ecirc; pode pagar R$ 997 &agrave; vista ou em at&eacute; 12x de R$ 103,11 no cart&atilde;o de cr&eacute;dito. Tamb&eacute;m aceitamos PIX.</p></div>
-</div>
+    function atualizarContador() {
+      const agora = Date.now();
+      const diff  = DEADLINE - agora;
 
-<div class="faq-item">
-<div class="faq-question">At&eacute; quando posso me inscrever?</div>
-<div class="faq-answer"><p>At&eacute; as vagas se esgotarem. A turma &eacute; limitada para garantir qualidade na experi&ecirc;ncia ao vivo. Quando fechar, n&atilde;o abriremos novas inscri&ccedil;&otilde;es para esta data.</p></div>
-</div>
+      if (diff <= 0) {
+        encerrar();
+        return;
+      }
 
-</div>
-</section>
+      const dias     = Math.floor(diff / 86400000);
+      const horas    = Math.floor((diff % 86400000) / 3600000);
+      const minutos  = Math.floor((diff % 3600000)  / 60000);
+      const segundos = Math.floor((diff % 60000)    / 1000);
 
-<!-- CTA FINAL -->
-<section class="cta-final section-dark">
-<div class="container">
-<h2>Sua pr&oacute;xima paciente merece uma profissional <em class="serif-italic accent">preparada.</em></h2>
-<p class="cta-sub">N&atilde;o deixe a inseguran&ccedil;a te impedir de oferecer um atendimento que transforma. A vaga &eacute; sua &mdash; mas as vagas s&atilde;o extremamente limitadas.</p>
-<div class="cta-preco accent">R$ 997 <span style="font-size:.9rem;font-family:'DM Sans',sans-serif;font-weight:400;">&agrave; vista</span></div>
-<div class="cta-parcela">ou 12x de R$ 103,11</div>
-<p style="margin-bottom:20px;font-size:.85rem;font-weight:600;letter-spacing:1px;color:var(--rose);">VAGAS LIMITADAS &mdash; GARANTA A SUA AGORA</p>
-<div class="cta-buttons">
-<a href="https://pay.kiwify.com.br/3GlInuJ" class="btn-comprar" style="background:var(--rose);color:var(--marrom);border-color:var(--rose);" target="_blank">QUERO MINHA VAGA AGORA</a>
-<a href="https://wa.me/5511945911300?text=Oi%20Thain%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20curso%20de%20Taping%20P%C3%B3s-Parto" class="btn-whatsapp" target="_blank">AINDA TENHO UMA D&Uacute;VIDA</a>
-</div>
-</div>
-</section>
+      // Barra topo — mostra total em horas
+      const totalHoras = dias * 24 + horas;
+      const bH = document.getElementById('bar-horas');
+      const bM = document.getElementById('bar-minutos');
+      const bS = document.getElementById('bar-segundos');
+      if (bH) bH.textContent = pad(totalHoras);
+      if (bM) bM.textContent = pad(minutos);
+      if (bS) bS.textContent = pad(segundos);
 
-<!-- RODAP&Eacute; -->
-<footer class="rodape">
-<p>Conex&atilde;o Maternar &mdash; Todos os direitos reservados &mdash; 2026</p>
-<p style="margin-top:6px;">Desenvolvido com dedica&ccedil;&atilde;o para profissionais que transformam vidas.</p>
-<p style="margin-top:6px;"><a href="https://wa.me/5511945911300">Contato via WhatsApp</a></p>
-</footer>
-<!-- JAVASCRIPT -->
-<script>
-/* ========== CONTADOR REGRESSIVO ========== */
-(function(){
-  var dataAlvo = new Date('2026-05-16T09:00:00-03:00').getTime();
-
-  function atualizar(){
-    var agora = new Date().getTime();
-    var diff = dataAlvo - agora;
-
-    if(diff <= 0){
-      document.getElementById('cd-days').textContent = '0';
-      document.getElementById('cd-hours').textContent = '00';
-      document.getElementById('cd-mins').textContent = '00';
-      document.getElementById('cd-secs').textContent = '00';
-      return;
+      // Contador rodapé — mostra dias + horas + min + seg
+      const fD = document.getElementById('footer-dias');
+      const fH = document.getElementById('footer-horas');
+      const fM = document.getElementById('footer-minutos');
+      const fS = document.getElementById('footer-segundos');
+      if (fD) fD.textContent = pad(dias);
+      if (fH) fH.textContent = pad(horas);
+      if (fM) fM.textContent = pad(minutos);
+      if (fS) fS.textContent = pad(segundos);
     }
 
-    var dias = Math.floor(diff / (1000 * 60 * 60 * 24));
-    var horas = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-    var segs = Math.floor((diff % (1000 * 60)) / 1000);
+    function encerrar() {
+      // Barra
+      const bar = document.getElementById('urgency-bar');
+      if (bar) {
+        bar.innerHTML = '<span style="font-weight:700; letter-spacing:0.12em; font-size:0.80rem;">INSCRIÇÕES ENCERRADAS</span>';
+      }
 
-    document.getElementById('cd-days').textContent = dias;
-    document.getElementById('cd-hours').textContent = horas < 10 ? '0' + horas : horas;
-    document.getElementById('cd-mins').textContent = mins < 10 ? '0' + mins : mins;
-    document.getElementById('cd-secs').textContent = segs < 10 ? '0' + segs : segs;
-  }
-
-  atualizar();
-  setInterval(atualizar, 1000);
-})();
-
-/* ========== CARROSSEL DEPOIMENTOS ========== */
-(function(){
-  var track = document.getElementById('carrosselTrack');
-  var btnPrev = document.getElementById('carrosselPrev');
-  var btnNext = document.getElementById('carrosselNext');
-
-  if(!track || !btnPrev || !btnNext) return;
-
-  var scrollAmount = 300;
-
-  btnNext.addEventListener('click', function(){
-    track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-  });
-
-  btnPrev.addEventListener('click', function(){
-    track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-  });
-
-  var startX = 0;
-  var isDown = false;
-  var scrollLeft = 0;
-
-  track.addEventListener('mousedown', function(e){
-    isDown = true;
-    track.style.cursor = 'grabbing';
-    startX = e.pageX - track.offsetLeft;
-    scrollLeft = track.scrollLeft;
-  });
-
-  track.addEventListener('mouseleave', function(){
-    isDown = false;
-    track.style.cursor = 'grab';
-  });
-
-  track.addEventListener('mouseup', function(){
-    isDown = false;
-    track.style.cursor = 'grab';
-  });
-
-  track.addEventListener('mousemove', function(e){
-    if(!isDown) return;
-    e.preventDefault();
-    var x = e.pageX - track.offsetLeft;
-    var walk = (x - startX) * 1.5;
-    track.scrollLeft = scrollLeft - walk;
-  });
-
-  var touchStartX = 0;
-
-  track.addEventListener('touchstart', function(e){
-    touchStartX = e.touches[0].clientX;
-  }, {passive: true});
-
-  track.addEventListener('touchmove', function(e){
-    var touchX = e.touches[0].clientX;
-    var diff = touchStartX - touchX;
-    track.scrollLeft += diff;
-    touchStartX = touchX;
-  }, {passive: true});
-})();
-
-/* ========== FAQ ACCORDION ========== */
-(function(){
-  var items = document.querySelectorAll('.faq-item');
-
-  items.forEach(function(item){
-    var question = item.querySelector('.faq-question');
-
-    question.addEventListener('click', function(){
-      var isActive = item.classList.contains('active');
-
-      items.forEach(function(el){
-        el.classList.remove('active');
+      // Botões — desabilita e remove link
+      ['cta-hero','cta-investimento','cta-final'].forEach(function(id) {
+        const el = document.getElementById(id);
+        if (el) {
+          el.classList.add('disabled');
+          el.removeAttribute('href');
+          el.innerHTML = 'INSCRIÇÕES ENCERRADAS';
+        }
       });
 
-      if(!isActive){
-        item.classList.add('active');
-      }
-    });
-  });
-})();
+      // Badges visíveis
+      ['badge-hero','badge-investimento','badge-final'].forEach(function(id) {
+        const el = document.getElementById(id);
+        if (el) el.style.display = 'block';
+      });
 
-/* ========== BOTAO FLUTUANTE WHATSAPP ========== */
-(function(){
-  var btn = document.createElement('a');
-  btn.href = 'https://wa.me/5511945911300?text=Oi%20Thain%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20curso%20de%20Taping%20P%C3%B3s-Parto';
-  btn.target = '_blank';
-  btn.setAttribute('aria-label', 'WhatsApp');
-  btn.style.cssText = 'position:fixed;bottom:20px;right:20px;width:60px;height:60px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(0,0,0,.25);z-index:9999;transition:transform .3s ease;';
+      // Zera contadores
+      ['footer-dias','footer-horas','footer-minutos','footer-segundos',
+       'bar-horas','bar-minutos','bar-segundos'].forEach(function(id) {
+        const el = document.getElementById(id);
+        if (el) el.textContent = '00';
+      });
+    }
 
-  btn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="#ffffff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>';
-
-  btn.addEventListener('mouseenter', function(){
-    btn.style.transform = 'scale(1.1)';
-  });
-  btn.addEventListener('mouseleave', function(){
-    btn.style.transform = 'scale(1)';
-  });
-
-  document.body.appendChild(btn);
-})();
-
-/* ========== ANIMACAO SCROLL REVEAL ========== */
-(function(){
-  var style = document.createElement('style');
-  style.textContent = '.reveal{opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .6s ease}.reveal.visible{opacity:1;transform:translateY(0)}';
-  document.head.appendChild(style);
-
-  var sections = document.querySelectorAll('section');
-  sections.forEach(function(sec){
-    sec.classList.add('reveal');
-  });
-
-  function checkReveal(){
-    var windowHeight = window.innerHeight;
-    sections.forEach(function(sec){
-      var top = sec.getBoundingClientRect().top;
-      if(top < windowHeight - 80){
-        sec.classList.add('visible');
-      }
-    });
-  }
-
-  checkReveal();
-  window.addEventListener('scroll', checkReveal);
-  window.addEventListener('resize', checkReveal);
-})();
-</script>
+    // Roda imediatamente e depois a cada segundo
+    atualizarContador();
+    setInterval(atualizarContador, 1000);
+  </script>
 
 </body>
 </html>
