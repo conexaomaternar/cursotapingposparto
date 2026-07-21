@@ -1,3 +1,4 @@
+html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -90,43 +91,6 @@
 
     .bar-texto { opacity: 0.90; white-space: nowrap; }
 
-    .bar-timer {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-    }
-
-    .timer-bloco {
-      background: rgba(255,255,255,0.15);
-      border-radius: 5px;
-      padding: 3px 9px;
-      min-width: 44px;
-      text-align: center;
-    }
-
-    .timer-num {
-      font-size: 1rem;
-      font-weight: 800;
-      letter-spacing: 0.03em;
-      display: block;
-    }
-
-    .timer-leg {
-      font-size: 0.52rem;
-      font-weight: 600;
-      letter-spacing: 0.10em;
-      opacity: 0.72;
-      display: block;
-    }
-
-    .timer-sep {
-      font-size: 1rem;
-      font-weight: 700;
-      opacity: 0.5;
-      align-self: center;
-      margin-bottom: 4px;
-    }
-
     /* ===================== BOTÃO CTA ===================== */
     .btn-cta {
       display: inline-flex;
@@ -169,28 +133,6 @@
     }
 
     .btn-cta:active { transform: translateY(0); }
-
-    .btn-cta.disabled {
-      background: linear-gradient(135deg, #9a9a9a, #7a7a7a) !important;
-      cursor: not-allowed !important;
-      box-shadow: none !important;
-      transform: none !important;
-      pointer-events: none !important;
-    }
-
-    .encerrado-badge {
-      display: none;
-      background: #2c2c2c;
-      color: var(--branco);
-      text-align: center;
-      font-size: 0.76rem;
-      font-weight: 700;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      padding: 14px 24px;
-      border-radius: 10px;
-      margin-top: 14px;
-    }
 
     /* ===================== HERO ===================== */
     #hero {
@@ -454,7 +396,7 @@
       flex-shrink: 0;
     }
 
-    /* ===================== CHECK ITEM (recebera) ===================== */
+    /* ===================== CHECK ITEM ===================== */
     .check-item {
       background: var(--branco);
       border-radius: 12px;
@@ -678,33 +620,6 @@
       letter-spacing: -0.02em;
     }
 
-    .footer-timer-block {
-      background: var(--branco);
-      border-radius: 14px;
-      padding: 18px 20px;
-      box-shadow: 0 4px 20px var(--sombra);
-      border: 1px solid rgba(201,168,130,0.20);
-      min-width: 76px;
-      text-align: center;
-    }
-
-    .footer-timer-num {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 2rem;
-      font-weight: 800;
-      color: var(--marrom-escuro);
-      line-height: 1;
-    }
-
-    .footer-timer-label {
-      font-size: 0.60rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--texto-suave);
-      margin-top: 5px;
-    }
-
     .ident-item {
       background: var(--branco);
       border-radius: 14px;
@@ -755,23 +670,7 @@
 
   <!-- BARRA FIXA -->
   <div id="urgency-bar">
-    <span class="bar-texto">ABERTURA RELÂMPAGO — ENCERRA EM</span>
-    <div class="bar-timer">
-      <div class="timer-bloco">
-        <span class="timer-num" id="bar-horas">00</span>
-        <span class="timer-leg">HORAS</span>
-      </div>
-      <span class="timer-sep">:</span>
-      <div class="timer-bloco">
-        <span class="timer-num" id="bar-minutos">00</span>
-        <span class="timer-leg">MIN</span>
-      </div>
-      <span class="timer-sep">:</span>
-      <div class="timer-bloco">
-        <span class="timer-num" id="bar-segundos">00</span>
-        <span class="timer-leg">SEG</span>
-      </div>
-    </div>
+    <span class="bar-texto">MASTERCLASS TAPING PÓS-PARTO · ACESSO IMEDIATO · +5 HORAS DE CONTEÚDO</span>
   </div>
 
   <!-- HERO -->
@@ -780,7 +679,7 @@
       <div class="hero__inner">
 
         <div>
-          <span class="hero__tag">Abertura Relâmpago · 48 horas</span>
+          <span class="hero__tag">Masterclass Online · Acesso Imediato</span>
           <h1 class="hero__title">Acesso à Masterclass<br><em>Taping Pós-Parto</em></h1>
           <p class="hero__subtitle">Da teoria à prática — mais de 5 horas de conteúdo gravado ao vivo, com demonstração em modelo real e raciocínio clínico aplicado.</p>
         </div>
@@ -801,12 +700,11 @@
           <p class="hero__price-installment"><span>12x de R$</span> 51<span style="font-size:1rem;">,40</span></p>
           <p class="hero__price-avista">ou R$ 497,00 à vista</p>
 
-          <a href="https://pay.kiwify.com.br/OKlG0Ee" class="btn-cta" id="cta-hero" target="_blank" rel="noopener">
+          <a href="https://pay.kiwify.com.br/OKlG0Ee" class="btn-cta" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
             QUERO GARANTIR MEU ACESSO
           </a>
-          <p class="hero__urgency-text">Abertura disponível por apenas 48 horas.</p>
-          <div class="encerrado-badge" id="badge-hero">INSCRIÇÕES ENCERRADAS</div>
+          <p class="hero__urgency-text">Acesso imediato após a compra. Disponível por 6 meses.</p>
         </div>
 
       </div>
@@ -920,7 +818,6 @@
       </div>
     </div>
   </section>
-
   <!-- COM QUEM VOCÊ IRÁ APRENDER -->
   <section class="section" id="professora">
     <div class="container">
@@ -928,7 +825,7 @@
         <div style="position:relative;">
           <div style="position:absolute; inset:-14px; background:linear-gradient(135deg, var(--bege-claro), var(--bege-medio)); border-radius:26px; z-index:0;"></div>
           <div style="position:relative; z-index:1; border-radius:18px; overflow:hidden; box-shadow:0 16px 56px var(--sombra-forte);">
-            <img src="foto-thaina.png" alt="Thainá — Fisioterapeuta especializada em Saúde da Mulher" style="width:100%; display:block;" />
+            <img src="foto-thaina-taping.png" alt="Thainá — Fisioterapeuta especializada em Saúde da Mulher" style="width:100%; display:block;" />
           </div>
           <div style="position:absolute; bottom:-18px; right:-18px; background:var(--branco); border-radius:14px; padding:16px 22px; box-shadow:0 8px 32px var(--sombra-forte); z-index:2; border:1px solid rgba(201,168,130,0.25); text-align:center;">
             <p style="font-size:1.5rem; font-weight:800; color:var(--marrom-escuro); line-height:1;">700+</p>
@@ -965,7 +862,7 @@
       </div>
     </div>
   </section>
-html
+
   <!-- O QUE VOCÊ RECEBERÁ -->
   <section class="section section--alt" id="recebera">
     <div class="container">
@@ -1144,7 +1041,6 @@ html
       </div>
     </div>
   </section>
-
   <!-- INVESTIMENTO -->
   <section class="section" id="investimento">
     <div class="container">
@@ -1162,46 +1058,38 @@ html
           <p style="font-size:0.78rem; color:var(--texto-suave); margin-top:4px; margin-bottom:4px;">por mês no cartão</p>
           <p style="font-size:0.86rem; font-weight:500; color:var(--texto-suave); margin-bottom:30px;">ou R$ 497,00 à vista</p>
 
-          <a href="https://pay.kiwify.com.br/OKlG0Ee" class="btn-cta" id="cta-investimento" target="_blank" rel="noopener">
+          <a href="https://pay.kiwify.com.br/OKlG0Ee" class="btn-cta" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
             QUERO ACESSAR AGORA
           </a>
-          <div class="encerrado-badge" id="badge-investimento">INSCRIÇÕES ENCERRADAS</div>
-          <p style="font-size:0.72rem; color:var(--texto-suave); margin-top:14px;">Abertura disponível por apenas 48 horas.</p>
+          <p style="font-size:0.72rem; color:var(--texto-suave); margin-top:14px;">Acesso imediato após a compra. Disponível por 6 meses a partir da data de inscrição.</p>
         </div>
 
-        <!-- CONTADOR FINAL -->
-        <div style="margin-top:52px;">
-          <p style="font-size:0.70rem; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--texto-suave); margin-bottom:22px;">Esta página encerra em</p>
-          <div style="display:flex; justify-content:center; align-items:center; gap:10px; flex-wrap:wrap;">
-            <div class="footer-timer-block">
-              <p class="footer-timer-num" id="footer-dias">00</p>
-              <p class="footer-timer-label">Dias</p>
+        <div style="margin-top:52px; background:var(--bege-claro); border-radius:16px; padding:32px 28px;">
+          <p style="font-size:0.70rem; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--texto-suave); margin-bottom:18px;">Metodologia aplicada na prática</p>
+          <div style="display:flex; justify-content:center; align-items:center; gap:32px; flex-wrap:wrap;">
+            <div style="text-align:center;">
+              <p style="font-size:2rem; font-weight:800; color:var(--marrom-escuro); line-height:1;">700+</p>
+              <p style="font-size:0.68rem; font-weight:600; color:var(--texto-suave); letter-spacing:0.08em; text-transform:uppercase; margin-top:4px;">atendimentos<br>realizados</p>
             </div>
-            <span style="font-size:1.5rem; font-weight:700; color:var(--marrom-claro); margin-bottom:10px;">:</span>
-            <div class="footer-timer-block">
-              <p class="footer-timer-num" id="footer-horas">00</p>
-              <p class="footer-timer-label">Horas</p>
+            <div style="width:1px; height:48px; background:var(--bege-medio);"></div>
+            <div style="text-align:center;">
+              <p style="font-size:2rem; font-weight:800; color:var(--marrom-escuro); line-height:1;">5h+</p>
+              <p style="font-size:0.68rem; font-weight:600; color:var(--texto-suave); letter-spacing:0.08em; text-transform:uppercase; margin-top:4px;">de conteúdo<br>gravado ao vivo</p>
             </div>
-            <span style="font-size:1.5rem; font-weight:700; color:var(--marrom-claro); margin-bottom:10px;">:</span>
-            <div class="footer-timer-block">
-              <p class="footer-timer-num" id="footer-minutos">00</p>
-              <p class="footer-timer-label">Min</p>
-            </div>
-            <span style="font-size:1.5rem; font-weight:700; color:var(--marrom-claro); margin-bottom:10px;">:</span>
-            <div class="footer-timer-block">
-              <p class="footer-timer-num" id="footer-segundos">00</p>
-              <p class="footer-timer-label">Seg</p>
+            <div style="width:1px; height:48px; background:var(--bege-medio);"></div>
+            <div style="text-align:center;">
+              <p style="font-size:2rem; font-weight:800; color:var(--marrom-escuro); line-height:1;">6</p>
+              <p style="font-size:0.68rem; font-weight:600; color:var(--texto-suave); letter-spacing:0.08em; text-transform:uppercase; margin-top:4px;">meses de<br>acesso</p>
             </div>
           </div>
         </div>
 
         <div style="margin-top:36px;">
-          <a href="https://pay.kiwify.com.br/OKlG0Ee" class="btn-cta" id="cta-final" target="_blank" rel="noopener" style="max-width:460px; margin:0 auto;">
+          <a href="https://pay.kiwify.com.br/OKlG0Ee" class="btn-cta" target="_blank" rel="noopener" style="max-width:460px; margin:0 auto;">
             <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
             GARANTIR MEU ACESSO
           </a>
-          <div class="encerrado-badge" id="badge-final" style="max-width:460px; margin:14px auto 0;">INSCRIÇÕES ENCERRADAS</div>
         </div>
 
       </div>
@@ -1213,82 +1101,6 @@ html
     <p style="font-size:0.76rem; color:rgba(255,255,255,0.38); letter-spacing:0.06em; line-height:1.8;">© 2026 Masterclass Taping Pós-Parto · Todos os direitos reservados</p>
     <p style="font-size:0.70rem; color:rgba(255,255,255,0.22); margin-top:8px; letter-spacing:0.04em;">www.cursotapingposparto.com.br</p>
   </footer>
-
-  <!-- JAVASCRIPT CONTADOR -->
-  <script>
-    const DEADLINE = new Date('2026-06-18T12:00:00-03:00').getTime();
-
-    function pad(n) { return String(n).padStart(2, '0'); }
-
-    function atualizarContador() {
-      const agora = Date.now();
-      const diff  = DEADLINE - agora;
-
-      if (diff <= 0) {
-        encerrar();
-        return;
-      }
-
-      const dias     = Math.floor(diff / 86400000);
-      const horas    = Math.floor((diff % 86400000) / 3600000);
-      const minutos  = Math.floor((diff % 3600000)  / 60000);
-      const segundos = Math.floor((diff % 60000)    / 1000);
-
-      // Barra topo — mostra total em horas
-      const totalHoras = dias * 24 + horas;
-      const bH = document.getElementById('bar-horas');
-      const bM = document.getElementById('bar-minutos');
-      const bS = document.getElementById('bar-segundos');
-      if (bH) bH.textContent = pad(totalHoras);
-      if (bM) bM.textContent = pad(minutos);
-      if (bS) bS.textContent = pad(segundos);
-
-      // Contador rodapé — mostra dias + horas + min + seg
-      const fD = document.getElementById('footer-dias');
-      const fH = document.getElementById('footer-horas');
-      const fM = document.getElementById('footer-minutos');
-      const fS = document.getElementById('footer-segundos');
-      if (fD) fD.textContent = pad(dias);
-      if (fH) fH.textContent = pad(horas);
-      if (fM) fM.textContent = pad(minutos);
-      if (fS) fS.textContent = pad(segundos);
-    }
-
-    function encerrar() {
-      // Barra
-      const bar = document.getElementById('urgency-bar');
-      if (bar) {
-        bar.innerHTML = '<span style="font-weight:700; letter-spacing:0.12em; font-size:0.80rem;">INSCRIÇÕES ENCERRADAS</span>';
-      }
-
-      // Botões — desabilita e remove link
-      ['cta-hero','cta-investimento','cta-final'].forEach(function(id) {
-        const el = document.getElementById(id);
-        if (el) {
-          el.classList.add('disabled');
-          el.removeAttribute('href');
-          el.innerHTML = 'INSCRIÇÕES ENCERRADAS';
-        }
-      });
-
-      // Badges visíveis
-      ['badge-hero','badge-investimento','badge-final'].forEach(function(id) {
-        const el = document.getElementById(id);
-        if (el) el.style.display = 'block';
-      });
-
-      // Zera contadores
-      ['footer-dias','footer-horas','footer-minutos','footer-segundos',
-       'bar-horas','bar-minutos','bar-segundos'].forEach(function(id) {
-        const el = document.getElementById(id);
-        if (el) el.textContent = '00';
-      });
-    }
-
-    // Roda imediatamente e depois a cada segundo
-    atualizarContador();
-    setInterval(atualizarContador, 1000);
-  </script>
 
 </body>
 </html>
